@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var detailsPanel: UIView!
+    @IBOutlet weak var totalPanel: UIView!
     
     private func setDefaultTip() {
         var defaults = NSUserDefaults.standardUserDefaults()
@@ -33,7 +34,15 @@ class ViewController: UIViewController {
             detailsPanel.hidden = true
         } else {
             detailsPanel.hidden = false
+            moveViewUpForKeyboard()
         }
+    }
+    
+    private func moveViewUpForKeyboard(){
+        UIView.animateWithDuration(1, animations:  {
+            self.totalPanel.frame = CGRect(x: 0, y: 0, width: self.totalPanel.frame.width, height: self.totalPanel.frame.height)
+        })
+        println("location start")
     }
     
     override func viewDidLoad() {
