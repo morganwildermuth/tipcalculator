@@ -14,12 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
-
+    @IBOutlet weak var detailsPanel: UIView!
+    
     private func setDefaultTip() {
         var defaults = NSUserDefaults.standardUserDefaults()
         var defaultTip = defaults.doubleForKey("defaultTip")
-        println("default tip on main page")
-        println(defaultTip)
         var tipPercentages = [0.18, 0.2, 0.22]
         switch defaultTip{
         case 0.18: tipControl.selectedSegmentIndex = 0
@@ -29,6 +28,14 @@ class ViewController: UIViewController {
         }
     }
 
+    private func setDetailsPanelStatus() {
+        if billField.text == "" {
+            detailsPanel.hidden = true
+        } else {
+            detailsPanel.hidden = false
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,6 +47,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         setDefaultTip()
+        setDetailsPanelStatus()
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,6 +56,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
+        setDetailsPanelStatus()
         var tipPercentages = [0.18, 0.2, 0.22]
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
 

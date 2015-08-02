@@ -16,8 +16,6 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         var defaults = NSUserDefaults.standardUserDefaults()
         var defaultTip = defaults.doubleForKey("defaultTip")
-        println("setting default tip")
-        println(defaultTip)
         var tipPercentages = [0.18, 0.2, 0.22]
         switch defaultTip{
         case 0.18: defaultTipControl.selectedSegmentIndex = 0
