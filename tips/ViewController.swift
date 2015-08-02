@@ -15,14 +15,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
 
+    private func setDefaultTip() {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var defaultTip = defaults.doubleForKey("defaultTip")
+        println("default tip on main page")
+        println(defaultTip)
+        var tipPercentages = [0.18, 0.2, 0.22]
+        switch defaultTip{
+        case 0.18: tipControl.selectedSegmentIndex = 0
+        case 0.2: tipControl.selectedSegmentIndex = 1
+        case 0.22: tipControl.selectedSegmentIndex = 2
+        default: tipControl.selectedSegmentIndex = 1
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        setDefaultTip()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        setDefaultTip()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,5 +65,6 @@ class ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
+    
 }
 

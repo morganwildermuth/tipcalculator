@@ -121,6 +121,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="xpJ-fD-0UB"/>
+                                    <action selector="tapSetDefaultTip:" destination="har-eN-3wo" eventType="valueChanged" id="pzb-t1-rYd"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xBR-TR-iBJ">
@@ -132,6 +133,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="QXv-4u-46j">
                         <barButtonItem key="backBarButtonItem" title="Back" id="B2f-OH-bIp"/>
