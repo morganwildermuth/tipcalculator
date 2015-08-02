@@ -78,10 +78,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.38910134559999998" green="1" blue="0.59688855519999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.38910134560146314" green="1" blue="0.59688855524086137" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.13150919427080598" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="haQ-hl-ldd" appends="YES" id="qdJ-eN-9EF"/>
@@ -140,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="QXv-4u-46j">
@@ -162,6 +163,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VZr-JV-DQR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.38910134559999998" green="1" blue="0.59688855519999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.61801433891311941" green="1" blue="0.5957800726563387" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -172,23 +175,11 @@
             </objects>
             <point key="canvasLocation" x="304" y="392"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Wnt-7m-zZp">
-            <objects>
-                <viewController id="wbo-xY-ogC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CoW-4L-Ez7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eJX-S8-PQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="0.11943909703470723" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
