@@ -3,4 +3,5 @@
 //
 
 #import <VENCore/VENCore.h>
+#import <VENCore/VENUser.h>
 #import <Venmo_iOS_SDK/Venmo.h>
