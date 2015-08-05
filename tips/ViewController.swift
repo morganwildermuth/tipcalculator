@@ -40,9 +40,8 @@ class ViewController: UIViewController {
     
     private func moveViewUpForKeyboard(){
         UIView.animateWithDuration(1, animations:  {
-            self.totalPanel.frame = CGRect(x: 0, y: 0, width: self.totalPanel.frame.width, height: self.totalPanel.frame.height)
+            self.totalPanel.frame = CGRect(x: 0, y: 50, width: self.totalPanel.frame.width, height: self.totalPanel.frame.height)
         })
-        println("location start")
     }
     
     private func calculateTotal(){

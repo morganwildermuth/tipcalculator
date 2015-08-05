@@ -16,16 +16,6 @@
                                 <rect key="frame" x="0.0" y="94" width="320" height="361"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" id="CWJ-yN-EEE">
-                                        <rect key="frame" x="96" y="70" width="216" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                        <connections>
-                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="42u-vU-Icq"/>
-                                        </connections>
-                                    </textField>
                                     <view contentMode="scaleToFill" id="2LJ-jx-2wQ">
                                         <rect key="frame" x="0.0" y="131" width="320" height="449"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -80,6 +70,16 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.24704212846779486" green="0.40159406565656564" blue="0.23942309599030082" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" id="CWJ-yN-EEE">
+                                        <rect key="frame" x="96" y="46" width="216" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="42u-vU-Icq"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
