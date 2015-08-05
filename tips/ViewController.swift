@@ -70,6 +70,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        billField.becomeFirstResponder()
         setDefaultTip()
         setDetailsPanelStatus()
         calculateTotal()
