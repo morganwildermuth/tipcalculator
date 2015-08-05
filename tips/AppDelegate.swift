@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Venmo_iOS_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Venmo.startWithAppId("VENMO_APP_ID", secret: "VENMO_APP_SECRET", name: "VENMO_APP_NAME")
         return true
     }
 
@@ -41,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        if Venmo.sharedInstance().handleOpenURL(url) {
+            return true
+        }
+        return false
+    }
 
 }
 

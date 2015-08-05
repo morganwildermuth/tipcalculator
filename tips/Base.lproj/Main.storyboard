@@ -67,14 +67,21 @@
                                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="c0L-ze-249"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pay" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="h1o-QP-sJK">
-                                                <rect key="frame" x="101" y="147" width="118" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HVV-Lj-jRT">
+                                                <rect key="frame" x="137" y="149" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
+                                                <state key="normal" title="Pay">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchPayButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kjz-w8-TOk"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.24704212846779486" green="0.40159406565656564" blue="0.23942309599030082" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -109,6 +116,7 @@
                     <connections>
                         <outlet property="billField" destination="CWJ-yN-EEE" id="POU-s3-3Z3"/>
                         <outlet property="detailsPanel" destination="2LJ-jx-2wQ" id="Sxi-it-MrN"/>
+                        <outlet property="payButton" destination="HVV-Lj-jRT" id="Set-9g-zla"/>
                         <outlet property="tipControl" destination="hnB-Bs-3Lf" id="cUm-6u-37V"/>
                         <outlet property="tipLabel" destination="S5u-o4-X3M" id="48H-mT-7f8"/>
                         <outlet property="totalLabel" destination="Niy-oa-q5H" id="5Fx-7k-KXf"/>
@@ -140,6 +148,7 @@
                                     <segment title="20%"/>
                                     <segment title="22%"/>
                                 </segments>
+                                <color key="tintColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="xpJ-fD-0UB"/>
                                     <action selector="tapSetDefaultTip:" destination="har-eN-3wo" eventType="valueChanged" id="pzb-t1-rYd"/>
@@ -206,5 +215,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <color key="tintColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.11943909699999999" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

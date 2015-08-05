@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Venmo_iOS_SDK
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var detailsPanel: UIView!
     @IBOutlet weak var totalPanel: UIView!
+    @IBOutlet weak var payButton: UIButton!
     
+    private func modifyPayButtonUI(){
+        payButton.layer.cornerRadius = 10
+        payButton.layer.borderWidth = 2
+        payButton.layer.borderColor = UIColor(red:0.25, green:0.4,blue:0.24,alpha:1.0).CGColor
+    }
+
     private func setDefaultTip() {
         var defaults = NSUserDefaults.standardUserDefaults()
         var defaultTip = defaults.doubleForKey("defaultTip")
@@ -73,6 +81,7 @@ class ViewController: UIViewController {
         setDefaultTip()
         setDetailsPanelStatus()
         calculateTotal()
+        modifyPayButtonUI()
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,6 +96,19 @@ class ViewController: UIViewController {
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+    }
+    
+    @IBAction func touchPayButton(sender: AnyObject) {
+        Venmo.sharedInstance().requestPermissions(["make_payments", "access_profile"], withCompletionHandler: { (success, error) -> Void in
+            if success {
+                println("success")
+                
+            }
+            else
+            {
+                println("fail")
+            }
+        })
     }
     
 }
