@@ -6,6 +6,7 @@ Time spent: 4 hours so far
 Breakdown:
 - 45 minutes to go through walkthrough and typeit up
 - 3 hours to do task 2, 3, and 4 in below completed checklist
+- 4 hours to complete the last task (okay, I skipped one; it looked boring) + install Cocoapods and then get the Venmo SDK half-way functional. Currently my app is asking users for their venmo info (or directing them to the venmo app if it exists), but I haven't created the Venmo view yet or the pay API call method
 
 Completed:
 

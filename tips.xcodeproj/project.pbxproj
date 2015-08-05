@@ -13,6 +13,7 @@
 		0F95D9181B69EA040092B082 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F95D9171B69EA040092B082 /* Images.xcassets */; };
 		0F95D91B1B69EA040092B082 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F95D9191B69EA040092B082 /* LaunchScreen.xib */; };
 		0F95D9271B69EA040092B082 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95D9261B69EA040092B082 /* tipsTests.swift */; };
+		0F9601F51B71FD3300DDB409 /* VenmoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9601F41B71FD3300DDB409 /* VenmoViewController.swift */; };
 		0FA0DB8D1B6DE376000977CB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0DB8C1B6DE376000977CB /* SettingsViewController.swift */; };
 		96A646760A8B980439BB327F /* Pods_tips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C9111591D26221308AC659 /* Pods_tips.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		0F95D9201B69EA040092B082 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F95D9251B69EA040092B082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F95D9261B69EA040092B082 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		0F9601F41B71FD3300DDB409 /* VenmoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenmoViewController.swift; sourceTree = "<group>"; };
 		0FA0DB8C1B6DE376000977CB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0FF746141B71D5AD0083B299 /* tips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tips-Bridging-Header.h"; sourceTree = "<group>"; };
 		8660767B1748C92CC2E67710 /* Pods-tips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tips/Pods-tips.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0F95D90E1B69EA040092B082 /* Supporting Files */,
 				0FA0DB8C1B6DE376000977CB /* SettingsViewController.swift */,
 				0FF746141B71D5AD0083B299 /* tips-Bridging-Header.h */,
+				0F9601F41B71FD3300DDB409 /* VenmoViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9601F51B71FD3300DDB409 /* VenmoViewController.swift in Sources */,
 				0F95D9131B69EA040092B082 /* ViewController.swift in Sources */,
 				0F95D9111B69EA040092B082 /* AppDelegate.swift in Sources */,
 				0FA0DB8D1B6DE376000977CB /* SettingsViewController.swift in Sources */,
