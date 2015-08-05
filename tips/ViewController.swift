@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Venmo_iOS_SDK
 
 class ViewController: UIViewController {
 
