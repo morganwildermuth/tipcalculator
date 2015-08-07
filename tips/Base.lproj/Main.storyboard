@@ -67,13 +67,6 @@
                                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="c0L-ze-249"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using one credit card? Pay your friend back now!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rFz-Ty-ULY">
-                                                <rect key="frame" x="21" y="140" width="326" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HVV-Lj-jRT">
                                                 <rect key="frame" x="97" y="169" width="127" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -91,6 +84,20 @@
                                                     <segue destination="xrX-af-FQd" kind="push" identifier="showVenmoView" id="VFJ-PK-aA0"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using one credit card? Pay your friend back now!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rFz-Ty-ULY">
+                                                <rect key="frame" x="21" y="140" width="326" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon! " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dqh-iP-ljB">
+                                                <rect key="frame" x="119" y="254" width="83" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.24704212846779486" green="0.40159406565656564" blue="0.23942309599030082" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -107,6 +114,32 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DsP-89-AVf">
+                                <rect key="frame" x="97" y="463" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Paypal">
+                                    <color key="titleColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LYo-U4-MCP">
+                                <rect key="frame" x="97" y="501" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Stripe">
+                                    <color key="titleColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.13150919427080598" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,6 +159,8 @@
                         <outlet property="billField" destination="CWJ-yN-EEE" id="POU-s3-3Z3"/>
                         <outlet property="detailsPanel" destination="2LJ-jx-2wQ" id="Sxi-it-MrN"/>
                         <outlet property="payButton" destination="HVV-Lj-jRT" id="Set-9g-zla"/>
+                        <outlet property="paypalButton" destination="DsP-89-AVf" id="dm3-o8-0Ee"/>
+                        <outlet property="stripeButton" destination="LYo-U4-MCP" id="XfW-aY-MPG"/>
                         <outlet property="tipControl" destination="hnB-Bs-3Lf" id="cUm-6u-37V"/>
                         <outlet property="tipLabel" destination="S5u-o4-X3M" id="48H-mT-7f8"/>
                         <outlet property="totalLabel" destination="Niy-oa-q5H" id="5Fx-7k-KXf"/>
@@ -205,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="304" y="392"/>
         </scene>
-        <!--Venmo View Controller-->
+        <!--Venmo-->
         <scene sceneID="iTF-iM-dE3">
             <objects>
                 <viewController id="xrX-af-FQd" customClass="VenmoViewController" customModule="tips" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,9 +269,6 @@
                                 <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="bxu-vI-mps"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="right" minimumFontSize="17" id="Ofq-np-Eph">
                                 <rect key="frame" x="176" y="96" width="128" height="30"/>
@@ -245,9 +277,6 @@
                                 <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NIZ-0E-GNz"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iKR-oR-Gh5">
                                 <rect key="frame" x="70" y="218" width="181" height="33"/>
@@ -262,7 +291,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aoh-lQ-j7e"/>
+                    <navigationItem key="navigationItem" title="Venmo" id="aoh-lQ-j7e"/>
                     <connections>
                         <outlet property="approveVenmo" destination="iKR-oR-Gh5" id="VBX-rJ-PiV"/>
                         <outlet property="billAmount" destination="Ofq-np-Eph" id="Fin-D9-1Id"/>

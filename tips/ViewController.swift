@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailsPanel: UIView!
     @IBOutlet weak var totalPanel: UIView!
     @IBOutlet weak var payButton: UIButton!
+    @IBOutlet weak var paypalButton: UIButton!
+    @IBOutlet weak var stripeButton: UIButton!
     
     private func modifyPayButtonUI(){
-        payButton.layer.cornerRadius = 10
-        payButton.layer.borderWidth = 2
-        payButton.layer.borderColor = UIColor(red:0.25, green:0.4,blue:0.24,alpha:1.0).CGColor
+        var payButtons = [payButton, paypalButton, stripeButton]
+        for payButton in payButtons {
+            payButton.layer.cornerRadius = 10
+            payButton.layer.borderWidth = 2
+            payButton.layer.borderColor = UIColor(red:0.25, green:0.4,blue:0.24,alpha:1.0).CGColor
+        }
     }
 
     private func setDefaultTip() {
@@ -40,8 +45,12 @@ class ViewController: UIViewController {
     private func setDetailsPanelStatus() {
         if billField.text == "" {
             detailsPanel.hidden = true
+            paypalButton.hidden = true
+            stripeButton.hidden = true
         } else {
             detailsPanel.hidden = false
+            paypalButton.hidden = false
+            stripeButton.hidden = false
             moveViewUpForKeyboard()
         }
     }

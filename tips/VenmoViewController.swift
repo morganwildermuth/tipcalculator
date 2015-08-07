@@ -47,12 +47,4 @@ class VenmoViewController: UIViewController {
     }
     */
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "showHorseDetail"{
-//            let horseDetailController = segue.destinationViewController as! HorseDetailViewController
-//            horseDetailController.horse = Horse(index: 0)
-//        }
-        println("in prepare for segue")
-    }
-
 }
