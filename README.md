@@ -20,10 +20,10 @@ Completed:
 * [x] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing. (chose to still keep the touch on the scene closing the keyboard so I could add additional functionality in the space covered by keyboard)
 * [x] Integrate with Venmo
 
-Basic Functionality (including storing data between launches)
-![Video Walkthrough Basic Functionality](tips-basic.gif)
+- Basic Functionality (including storing data between launches)
+- ![Video Walkthrough Basic Functionality](tips-basic.gif)
 
-Venmo Functionality
-![Video Walkthrough Venmo Functionality](tips-venmo.gif)
+- Venmo Functionality
+- ![Video Walkthrough Venmo Functionality](tips-venmo.gif)
 
 Note: to embed the gif file, just check your gif file into your repo and update the name of the file above.
