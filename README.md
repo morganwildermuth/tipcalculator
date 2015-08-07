@@ -16,13 +16,12 @@ Completed:
 * [x] Required: Settings page to change the default tip percentage.
 * [x] Optional: UI animations
 * [x] Optional: Remembering the bill amount across app restarts (if less than 10 minutes)
-* [] Optional: Using locale-specific currency and currency thousands separators.
 * [x] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing. (chose to still keep the touch on the scene closing the keyboard so I could add additional functionality in the space covered by keyboard)
-* [x] Integrate with Venmo
+* [x] Optional:  Integrate with Venmo
 
 ![Video Walkthrough Basic Functionality](tips-basic.gif)
 
 
 ![Video Walkthrough Venmo Functionality](tips-venmo.gif)
 
-Note: to embed the gif file, just check your gif file into your repo and update the name of the file above.
+Using the Venmo SDK
