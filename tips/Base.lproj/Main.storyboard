@@ -80,6 +80,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="touchPayButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kjz-w8-TOk"/>
+                                                    <segue destination="xrX-af-FQd" kind="push" identifier="showVenmoView" id="VFJ-PK-aA0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -130,7 +131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="836" y="392"/>
+            <point key="canvasLocation" x="804" y="404"/>
         </scene>
         <!--Settings-->
         <scene sceneID="736-90-v8W">
@@ -196,28 +197,35 @@
             </objects>
             <point key="canvasLocation" x="304" y="392"/>
         </scene>
-        <!--View Controller-->
+        <!--Venmo View Controller-->
         <scene sceneID="iTF-iM-dE3">
             <objects>
-                <viewController id="xrX-af-FQd" sceneMemberID="viewController">
+                <viewController id="xrX-af-FQd" customClass="VenmoViewController" customModule="tips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2p8-SX-oC2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popover?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZU2-4a-S7i">
-                                <rect key="frame" x="123" y="71" width="74" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" id="Ofq-np-Eph">
+                                <rect key="frame" x="88" y="100" width="216" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NIZ-0E-GNz"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aoh-lQ-j7e"/>
+                    <connections>
+                        <outlet property="billAmount" destination="Ofq-np-Eph" id="Fin-D9-1Id"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uom-Bv-5RG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="1068"/>
+            <point key="canvasLocation" x="804" y="1037"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

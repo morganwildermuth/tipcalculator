@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Venmo_iOS_SDK
 
 class VenmoViewController: UIViewController {
 
+    @IBOutlet weak var billAmount: UITextField!
+    var billTotalFromSegue: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        println("\(billTotalFromSegue)")
         // Do any additional setup after loading the view.
     }
 
@@ -30,5 +34,13 @@ class VenmoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "showHorseDetail"{
+//            let horseDetailController = segue.destinationViewController as! HorseDetailViewController
+//            horseDetailController.horse = Horse(index: 0)
+//        }
+        println("in prepare for segue")
+    }
 
 }
