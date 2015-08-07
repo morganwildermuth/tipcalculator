@@ -12,12 +12,30 @@ import Venmo_iOS_SDK
 class VenmoViewController: UIViewController {
 
     @IBOutlet weak var billAmount: UITextField!
+    @IBOutlet weak var approveVenmoPayment: UILabel!
+    @IBOutlet weak var denyVenmoPayment: UILabel!
+    var venmoButtons: [UILabel] = []
     var billTotalFromSegue: String?
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        venmoButtons = [approveVenmoPayment, denyVenmoPayment]
+        roundButtons()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("\(billTotalFromSegue)")
+        billAmount.text = billTotalFromSegue
         // Do any additional setup after loading the view.
+    }
+
+    private func roundButtons() {
+        for venmoButton in venmoButtons {
+            venmoButton.layer.cornerRadius = 10
+            venmoButton.layer.borderWidth = 2
+            venmoButton.layer.borderColor = UIColor(red:0.25, green:0.4,blue:0.24,alpha:1.0).CGColor
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
