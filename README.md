@@ -5,6 +5,8 @@ This is a Tip Calculator application for iOS submitted as the [pre-assignment](h
 Using the Venmo SDK
 
 Time spent: 11:45 hours so far
+
+
 Breakdown:
 - 45 minutes to go through walkthrough and type it up
 - 3 hours to do task 2, 3, and 4 in below completed checklist
