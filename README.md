@@ -2,6 +2,8 @@
 
 This is a Tip Calculator application for iOS submitted as the [pre-assignment](https://gist.github.com/timothy1ee/7747214) requirement for CodePath.
 
+Using the Venmo SDK
+
 Time spent: 11:45 hours so far
 Breakdown:
 - 45 minutes to go through walkthrough and type it up
@@ -19,9 +21,10 @@ Completed:
 * [x] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing. (chose to still keep the touch on the scene closing the keyboard so I could add additional functionality in the space covered by keyboard)
 * [x] Optional:  Integrate with Venmo
 
+- Two GIFs to bypass the login Venmo screen + my password
+
 ![Video Walkthrough Basic Functionality](tips-basic.gif)
 
 
 ![Video Walkthrough Venmo Functionality](tips-venmo.gif)
 
-Using the Venmo SDK
