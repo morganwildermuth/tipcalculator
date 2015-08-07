@@ -268,7 +268,7 @@
                                 <color key="backgroundColor" red="0.61801433890000002" green="1" blue="0.5957800727" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.24704212850000001" green="0.4015940657" blue="0.239423096" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="right" minimumFontSize="17" id="Ofq-np-Eph">
                                 <rect key="frame" x="115" y="147" width="201" height="30"/>
