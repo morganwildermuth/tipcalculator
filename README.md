@@ -21,9 +21,9 @@ Completed:
 * [x] Integrate with Venmo
 
 - Basic Functionality (including storing data between launches)
-- ![Video Walkthrough Basic Functionality](tips-basic.gif)
+![Video Walkthrough Basic Functionality](tips-basic.gif)
 
 - Venmo Functionality
-- ![Video Walkthrough Venmo Functionality](tips-venmo.gif)
+![Video Walkthrough Venmo Functionality](tips-venmo.gif)
 
 Note: to embed the gif file, just check your gif file into your repo and update the name of the file above.
