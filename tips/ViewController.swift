@@ -109,25 +109,21 @@ class ViewController: UIViewController {
     
 
     @IBAction func touchPayButton(sender: AnyObject) {
+        Venmo.sharedInstance().defaultTransactionMethod = VENTransactionMethod.API
         Venmo.sharedInstance().requestPermissions(["make_payments", "access_profile"], withCompletionHandler: { (success, error) -> Void in
             if success {
                 println("success")
-                //self.performSegueWithIdentifier("showVenmoView", sender: sender);
                 
             }
             else
             {
                 println("fail")
-                //self.performSegueWithIdentifier("showVenmoView", sender: sender);
+                println("\(error)")
             }
         })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //        if segue.identifier == "showHorseDetail"{
-        //            let horseDetailController = segue.destinationViewController as! HorseDetailViewController
-        //            horseDetailController.horse = Horse(index: 0)
-        //        }
         if (segue.identifier == "showVenmoView") {
             if let viewController: VenmoViewController = segue.destinationViewController as? VenmoViewController{
                 viewController.billTotalFromSegue = totalLabel.text

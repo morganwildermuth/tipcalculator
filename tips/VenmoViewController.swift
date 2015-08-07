@@ -14,6 +14,11 @@ class VenmoViewController: UIViewController {
     @IBOutlet weak var billAmount: UITextField!
     var billTotalFromSegue: String?
     @IBOutlet weak var approveVenmo: UIButton!
+    @IBOutlet weak var venmoReceiver: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var resultsDetailView: UIView!
+    @IBOutlet weak var resultDetails: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,6 +27,7 @@ class VenmoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultsDetailView.hidden = true
         billAmount.text = billTotalFromSegue
         // Do any additional setup after loading the view.
     }
@@ -47,4 +53,25 @@ class VenmoViewController: UIViewController {
     }
     */
     
+    @IBAction func sendVenmoPayment(sender: AnyObject) {
+        var intBillAmountInCents = String(dropFirst(billTotalFromSegue!.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil))).toInt()!
+        var test = "1".toInteger()
+        Venmo.sharedInstance().sendPaymentTo(venmoReceiver.text, amount: test, note: "Test", audience: VENTransactionAudience.Private) {
+            (transaction, happen, error) -> Void in
+            if error == nil {
+                self.resultsDetailView.backgroundColor = UIColor.greenColor()
+                self.resultLabel.text = "Success!"
+                self.resultDetails.text = "\(self.billAmount.text) was sent to \(self.venmoReceiver.text)"
+                self.resultLabel.sizeToFit()
+                self.resultsDetailView.hidden = false
+            } else {
+                println("\(error)")
+                self.resultsDetailView.backgroundColor = UIColor.redColor()
+                self.resultLabel.text = "Failure!"
+                self.resultDetails.text = "Are you sure the email or phone number is correct?"
+                self.resultLabel.sizeToFit()
+                self.resultsDetailView.hidden = false
+            }
+        }
+    }
 }
