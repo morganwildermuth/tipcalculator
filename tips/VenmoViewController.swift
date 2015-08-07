@@ -19,6 +19,7 @@ class VenmoViewController: UIViewController {
     
     @IBOutlet weak var resultsDetailView: UIView!
     @IBOutlet weak var resultDetails: UILabel!
+    var intBillAmountInCents: Int = 1
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -55,8 +56,7 @@ class VenmoViewController: UIViewController {
     
     @IBAction func sendVenmoPayment(sender: AnyObject) {
         var intBillAmountInCents = String(dropFirst(billTotalFromSegue!.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil))).toInt()!
-        var test = "1".toInteger()
-        Venmo.sharedInstance().sendPaymentTo(venmoReceiver.text, amount: test, note: "Test", audience: VENTransactionAudience.Private) {
+        Venmo.sharedInstance().sendPaymentTo(venmoReceiver.text, amount: UInt(intBillAmountInCents), note: "Test", audience: VENTransactionAudience.Private) {
             (transaction, happen, error) -> Void in
             if error == nil {
                 self.resultsDetailView.backgroundColor = UIColor.greenColor()
